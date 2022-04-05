@@ -1,0 +1,25 @@
+{
+  "name": "note-taker2",
+  "version": "1.0.0",
+  "description": "## Description of Project To allow business owners to write and save notes to help them organize their thoughts and keep track of tasks they need to complete.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utilrr/note-taker2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utilrr/note-taker2/issues"
+  },
+  "homepage": "https://github.com/utilrr/note-taker2#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "uniqid": "^5.4.0"
+  }
+}
