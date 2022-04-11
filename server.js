@@ -1,9 +1,9 @@
 const express = require("express");
 const fs = require("fs");
-const app = express();
 const path = require("path");
 const notesDb = require("./db/db.json");
 const PORT = process.env.PORT || 3001;
+const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -15,26 +15,16 @@ app.get("/api/notes", (req, res) => {
   res.json(notesDb);
 });
 
-// get index.html file
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
-});
-
-// get notes.html file
+// Get notes.html file
 app.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/notes.html"));
-});
-
-// get index.html file
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
 // POST routes adds notes to json file
 app.post("/api/notes", (req, res) => {
   let saveNote = req.body;
   notesDb.push(saveNote);
-  // adds id number to each note
+
   let number = 1;
   notesDb.forEach((note) => {
     note.id = number;
@@ -42,24 +32,52 @@ app.post("/api/notes", (req, res) => {
     return notesDb;
   });
   console.log(notesDb);
-  //writes database
+  // Writes to database
   writeToDataBase(notesDb);
   res.json(saveNote);
 });
 
-// runs the server
-app.listen(PORT, () => {
-  console.log(`API server now on ${PORT}!`);
+// Delete a selected note
+app.delete("/api/notes/:id", (req, res) => {
+  console.log(req.params.id);
+  let jsonFilePath = path.join(__dirname, "/db/db.json");
+  // request to delete note by id.
+  for (let i = 0; i < notes.length; i++) {
+    if (note[i].id == req.params.id) {
+      // Splice takes i position, and then deletes the 1 note.
+      note.splice(i, 1);
+      break;
+    }
+  }
+  // Write the db.json file again.
+  fs.writeFileSync(jsonFilePath, JSON.stringify(database), function (err) {
+    if (err) {
+      return console.log(err);
+    } else {
+      console.log("HOO-RAY, YOUR NOTE WAS DELETED!");
+    }
+  });
+  res.json(database);
 });
 
-//write to database function
+// Get index.html file. Because of the Asterisk, this Get function must come last.
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/index.html"));
+});
+
+// Run the server
+app.listen(PORT, () => {
+  console.log(`API SERVER NOW ON ${PORT}!`);
+});
+
+// Write to database function
 const writeToDataBase = (notesDb) => {
   notesDb = JSON.stringify(notesDb);
   fs.writeFile("./db/db.json", notesDb, (error) => {
     if (error) {
       return console.log(error);
     } else {
-      console.log("notes added!");
+      console.log("NOTES ADDED!");
     }
   });
 };
