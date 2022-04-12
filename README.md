@@ -5,8 +5,8 @@ To allow business owners to write and save notes to help them organize their tho
 
 ## Aims/Goals
 1. When I open the Note Taker I am presented with a landing page with a link to a notes page.
-2. When I click on the link to the notes page I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column.
-3. When I enter a new note title and the note’s text a Save icon (floppy disk?) appears in the navigation at the top of the page.
+2. When I click on the link to the notes page I am presented with a page with existing notes listed in the left-hand column, plus empty fields in the center of the window to enter a new note title and the note’s text. (I suppose technically it's in the right-hand column.)
+3. When I enter a new note title and the note’s text a Save icon (i.e. floppy disk) appears in the righthand  navigation at the top of the page.
 4. When I click on the Save icon the new note I entered is saved and appears in the left-hand column with the other existing notes.
 5. When I click on an existing note in the list in the left-hand column that note appears in the right-hand column.
 6. When I click on the Write icon (+) in the navigation at the top of the page I am presented with empty fields to enter a new note title and the note’s text in the right-hand column.
@@ -31,6 +31,8 @@ To allow business owners to write and save notes to help them organize their tho
 https://tranquil-note.herokuapp.com/notes
 
 ## My Repo link
+
+https://github.com/utilrr/note-taker2
 
 ## Screenshots w/ Captions
 
