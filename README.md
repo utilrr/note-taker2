@@ -25,6 +25,9 @@ To allow business owners to write and save notes to help them organize their tho
 
 ## Challenges Faced
 
+Staying focused on completing the project, after getting behind. 
+After feeling totally skunked by my early attempts, I created another repo to start over with a clean slate. When I get frustrated by my ineptitude and constant typing errors, someties I have to walk away from the computer to decompress. And while some debugging issues seem straightforward, others are nebulous and no amount of reading documentation can make things clearer. Taking breaks and coming back with a refreshed mind can make all the difference.
+I struggled for what seemed like a week to get the delete function to work. I had to decide between Splicing, Slicing or Filtering the note. Still hazy on how each option fits different scenarios.
 
 ## Deployed Website link
 
