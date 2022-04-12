@@ -28,11 +28,13 @@ To allow business owners to write and save notes to help them organize their tho
 
 ## Deployed Website link
 
+https://tranquil-note.herokuapp.com/notes
+
 ## My Repo link
 
 ## Screenshots w/ Captions
 
-## Accessibility Audit
+
 
 
 ### Contribution
