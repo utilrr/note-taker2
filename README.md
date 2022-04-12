@@ -36,8 +36,20 @@ https://github.com/utilrr/note-taker2
 
 ## Screenshots w/ Captions
 
+![Initial_view_upon_opening](https://user-images.githubusercontent.com/25494815/162864781-2435dd68-79ef-48f2-a775-d65780aea887.png)
+Here's the initial view once the Note Taker is opened.
 
+![Creating_note_to_delete](https://user-images.githubusercontent.com/25494815/162864823-b5d7d3ad-4a39-4238-aba4-65ddc9055be3.png)
+In this image, I'm creating a note to delete.
 
+![Preparing_to_delete_note](https://user-images.githubusercontent.com/25494815/162864844-e456aceb-2700-4296-ba5f-efd82f0a97db.png)
+In this image, the note has been created and is residing in the lefthand column. Now we delete it.
+
+![Creating_note_and_deleting_same_note](https://user-images.githubusercontent.com/25494815/162864855-4959913f-9897-42d8-918e-bf2abedcfbe4.png)
+Hopefully this shows how the note was first created, then deleted from the command line.
+
+![Displaying_note_contents](https://user-images.githubusercontent.com/25494815/162864878-a4136e2a-09f2-4fd0-95a3-f41ff4eede82.png)
+This view shows the contents of one of the preexisting notes.
 
 ### Contribution
 Made with ❤️ by [Mark Healy]
